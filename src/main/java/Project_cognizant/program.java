@@ -2,7 +2,6 @@ package Project_cognizant;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.time.Duration;
 import java.util.Scanner;
 import java.util.Set;
@@ -43,38 +42,46 @@ public class program {
 		}
 		
 		try {
-			
+		//creating 'ts' as screenShot object
 		TakesScreenshot ts=(TakesScreenshot)driver;
 			
 		driver.get("http://cookbook.seleniumacademy.com/Config.html");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		File src=ts.getScreenshotAs(OutputType.FILE);  //taking screenShot
+		File trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\fullpage.png");
+		FileUtils.copyFile(src, trg);
 		//taking 
 		
 		
 		//selecting car type
 		driver.findElement(By.cssSelector("select[name='make']")).sendKeys("Audi");
-		Thread.sleep(1500);
-		File src=ts.getScreenshotAs(OutputType.FILE);
-		File trg=new File("E:\\java\\WebDriver_Selinium\\ScreenShot\\fullpage.png");
-		FileUtils.copyFile(src, trg);
+//		Thread.sleep(1500);
+		File car_src=ts.getScreenshotAs(OutputType.FILE);  //taking screenShot
+		File car_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\car_type.png");
+		FileUtils.copyFile(car_src, car_trg);
 		
+		
+		//selecting colour
 		driver.findElement(By.xpath("//select[@name='color']")).sendKeys("White");
 //		Thread.sleep(1500);
-		File colour=new File("E:\\java\\WebDriver_Selinium\\ScreenShot\\colour.png");
-		FileUtils.copyFile(src, colour);
+		File colour_src=ts.getScreenshotAs(OutputType.FILE);
+		File colour_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\colour.png");
+		FileUtils.copyFile(colour_src, colour_trg);
 		
-		
+		//selecting fuel type
 		driver.findElement(By.xpath("//input[@value='Diesel']")).click();
 //		Thread.sleep(1500);
-		File fuel=new File("E:\\java\\WebDriver_Selinium\\ScreenShot\\fuel.png");
-		FileUtils.copyFile(src, fuel);
+		File fuel_src=ts.getScreenshotAs(OutputType.FILE);
+		File fuel_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\fuel.png");
+		FileUtils.copyFile(fuel_src, fuel_trg);
 		
+		//selecting sensor type
 		driver.findElement(By.name("parksensor")).click();
 //		Thread.sleep(1500);
-		File optinal=new File("E:\\java\\WebDriver_Selinium\\ScreenShot\\optinal.png");
-		FileUtils.copyFile(src, optinal);
+		File sensor_src=ts.getScreenshotAs(OutputType.FILE);
+		File sensor_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\optinal.png");
+		FileUtils.copyFile(sensor_src, sensor_trg);
 
 		
 
@@ -82,18 +89,30 @@ public class program {
 		//Click on Help button
 		driver.findElement(By.id("helpbutton")).click();
 //		Thread.sleep(1500);
+		File help_src=ts.getScreenshotAs(OutputType.FILE);
+		File help_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\help.png");
+		FileUtils.copyFile(help_src, help_trg);
+		
 		//click on online chat support
 		driver.findElement(By.id("chatbutton")).click();
 //		Thread.sleep(1500);
+		File online_src=ts.getScreenshotAs(OutputType.FILE);
+		File online_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\online.png");
+		FileUtils.copyFile(online_src, online_trg);
+		
 		//click on visit button
 		driver.findElement(By.id("visitbutton")).click();
 //		Thread.sleep(1500);
+		File visit_src=ts.getScreenshotAs(OutputType.FILE);
+		File visit_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\visit.png");
+		FileUtils.copyFile(visit_src, visit_trg);
 	
 		
-
+		
+		//taking id of current window in which driver focus
 		String mainWindow = driver.getWindowHandle();
 		
-		
+		//printing number of window is open
 		System.out.println("Total number of windows are open: "+driver.getWindowHandles().size());
 	
 		Set<String> allwindows = driver.getWindowHandles();

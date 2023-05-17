@@ -45,6 +45,7 @@ public class CaptureScreenshot {
 		FileUtils.copyFile(src1, trg1);
 		
 		
+		
 		// capture screenshot of specific Web element -- selenium 4+
 		
 //			WebElement logo=driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']"));
