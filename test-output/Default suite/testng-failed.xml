@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.SecondTest">
+      <class name="Project_cognizant.Test_function">
         <methods>
-          <include name="login"/>
+          <include name="input"/>
+          <include name="screenShot"/>
         </methods>
-      </class> <!-- TestNG.SecondTest -->
+      </class> <!-- Project_cognizant.Test_function -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

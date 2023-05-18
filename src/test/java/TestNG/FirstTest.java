@@ -5,10 +5,11 @@ import org.testng.annotations.Test;
 
 public class FirstTest 
 {
-  
+	int a=0;
 	@Test(priority=1)
 	void openapp()
 	{
+		System.out.println(a);
 		System.out.println("testing 1");
 	}
 	
