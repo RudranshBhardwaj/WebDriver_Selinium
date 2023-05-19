@@ -5,8 +5,10 @@
     <classes>
       <class name="Project_cognizant.Test_function">
         <methods>
+          <include name="open_page"/>
           <include name="input"/>
-          <include name="screenShot"/>
+          <include name="close"/>
+          <include name="validation"/>
         </methods>
       </class> <!-- Project_cognizant.Test_function -->
     </classes>

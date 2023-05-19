@@ -1,53 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-19T01:35:45 IST" name="Default suite" finished-at="2023-05-19T01:36:02 IST" duration-ms="16977">
+  <suite started-at="2023-05-19T21:46:11 IST" name="Default suite" finished-at="2023-05-19T21:46:11 IST" duration-ms="34">
     <groups>
     </groups>
-    <test started-at="2023-05-19T01:35:45 IST" name="Default test" finished-at="2023-05-19T01:36:02 IST" duration-ms="16977">
-      <class name="Project_cognizant.Test_function">
-        <test-method is-config="true" signature="input()[pri:0, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:35:45 IST" name="input" finished-at="2023-05-19T01:35:59 IST" duration-ms="14190" status="PASS">
+    <test started-at="2023-05-19T21:46:11 IST" name="Default test" finished-at="2023-05-19T21:46:11 IST" duration-ms="34">
+      <class name="annotation.b">
+        <test-method is-config="true" signature="login()[pri:0, instance:annotation.b@6b927fb]" started-at="2023-05-19T21:46:11 IST" name="login" finished-at="2023-05-19T21:46:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- input -->
-        <test-method signature="open_page()[pri:0, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:35:59 IST" name="open_page" finished-at="2023-05-19T01:36:00 IST" duration-ms="988" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="search()[pri:1, instance:annotation.b@6b927fb]" started-at="2023-05-19T21:46:11 IST" name="search" finished-at="2023-05-19T21:46:11 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_page -->
-        <test-method signature="car_type()[pri:2, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:00 IST" name="car_type" finished-at="2023-05-19T01:36:00 IST" duration-ms="186" status="PASS">
+        </test-method> <!-- search -->
+        <test-method signature="advacedsearch()[pri:2, instance:annotation.b@6b927fb]" started-at="2023-05-19T21:46:11 IST" name="advacedsearch" finished-at="2023-05-19T21:46:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- car_type -->
-        <test-method signature="colour()[pri:3, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:00 IST" name="colour" finished-at="2023-05-19T01:36:01 IST" duration-ms="174" status="PASS">
+        </test-method> <!-- advacedsearch -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:annotation.b@6b927fb]" started-at="2023-05-19T21:46:11 IST" name="logout" finished-at="2023-05-19T21:46:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- colour -->
-        <test-method signature="click()[pri:4, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:01 IST" name="click" finished-at="2023-05-19T01:36:01 IST" duration-ms="163" status="PASS">
+        </test-method> <!-- logout -->
+      </class> <!-- annotation.b -->
+      <class name="annotation.a">
+        <test-method is-config="true" signature="hi()[pri:0, instance:annotation.a@2a798d51]" started-at="2023-05-19T21:46:11 IST" name="hi" finished-at="2023-05-19T21:46:11 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click -->
-        <test-method signature="sensor()[pri:5, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:01 IST" name="sensor" finished-at="2023-05-19T01:36:01 IST" duration-ms="166" status="PASS">
+        </test-method> <!-- hi -->
+        <test-method is-config="true" signature="by()[pri:0, instance:annotation.a@2a798d51]" started-at="2023-05-19T21:46:11 IST" name="by" finished-at="2023-05-19T21:46:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sensor -->
-        <test-method signature="help()[pri:6, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:01 IST" name="help" finished-at="2023-05-19T01:36:01 IST" duration-ms="252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- help -->
-        <test-method signature="chat()[pri:7, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:01 IST" name="chat" finished-at="2023-05-19T01:36:01 IST" duration-ms="314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chat -->
-        <test-method signature="visit()[pri:8, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:01 IST" name="visit" finished-at="2023-05-19T01:36:02 IST" duration-ms="288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visit -->
-        <test-method signature="validation()[pri:9, instance:Project_cognizant.Test_function@7b9a4292]" started-at="2023-05-19T01:36:02 IST" name="validation" finished-at="2023-05-19T01:36:02 IST" duration-ms="221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validation -->
-      </class> <!-- Project_cognizant.Test_function -->
+        </test-method> <!-- by -->
+      </class> <!-- annotation.a -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

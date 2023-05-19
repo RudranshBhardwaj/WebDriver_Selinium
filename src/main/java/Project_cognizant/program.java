@@ -84,7 +84,7 @@ public class program {
 		FileUtils.copyFile(sensor_src, sensor_trg);
 
 		
-
+		
 		
 		//Click on Help button
 		driver.findElement(By.id("helpbutton")).click();
@@ -93,12 +93,16 @@ public class program {
 		File help_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\help.png");
 		FileUtils.copyFile(help_src, help_trg);
 		
+		System.out.println(driver.getWindowHandle());
+		
 		//click on online chat support
 		driver.findElement(By.id("chatbutton")).click();
 //		Thread.sleep(1500);
 		File online_src=ts.getScreenshotAs(OutputType.FILE);
 		File online_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\online.png");
 		FileUtils.copyFile(online_src, online_trg);
+		
+		System.out.println(driver.getWindowHandle());
 		
 		//click on visit button
 		driver.findElement(By.id("visitbutton")).click();
