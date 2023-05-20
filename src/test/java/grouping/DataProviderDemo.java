@@ -43,7 +43,7 @@ public class DataProviderDemo {
 		driver.close();
 	}
 	
-	@DataProvider(name="dp", indices= {0,1,4})
+	@DataProvider(name="dp")
 	String [][] loginData()
 	{
 		String data[][]= {  

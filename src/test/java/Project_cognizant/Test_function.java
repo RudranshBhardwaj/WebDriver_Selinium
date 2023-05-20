@@ -10,13 +10,17 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ObjectUtils.Null;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -26,6 +30,7 @@ public class Test_function {
 	
 	WebDriver driver = null;
 	TakesScreenshot ts;
+	JavascriptExecutor js=(JavascriptExecutor)driver;
 
 	
 	@BeforeTest
@@ -48,6 +53,7 @@ public class Test_function {
 			System.out.println("You have Press Wrong Key");
 		}
 	}
+
 	
 	@Test(priority = 0)
 	void open_page() throws IOException{
@@ -66,7 +72,9 @@ public class Test_function {
 //	//selecting car type
 	@Test(priority = 2,dependsOnMethods = {"open_page"})
 	void car_type() throws IOException {
-	driver.findElement(By.cssSelector("select[name='make']")).sendKeys("Audi");
+	WebElement car= driver.findElement(By.cssSelector("select[name='make']"));
+	car.sendKeys("Audi");
+	
 	File car_src=ts.getScreenshotAs(OutputType.FILE);  //taking screenShot
 	File car_trg=new File(System.getProperty("user.dir")+ "\\ScreenShot\\car_type.png");
 	FileUtils.copyFile(car_src, car_trg);
@@ -163,6 +171,8 @@ public class Test_function {
 	
 	@AfterTest()
 	void close() {
+		driver.close();
+		
 		driver.quit();
 	}
 
