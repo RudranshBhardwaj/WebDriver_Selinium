@@ -8,7 +8,7 @@
           <include name="open_page"/>
           <include name="input"/>
           <include name="close"/>
-          <include name="car_type"/>
+          <include name="validation"/>
         </methods>
       </class> <!-- Project_cognizant.Test_function -->
     </classes>

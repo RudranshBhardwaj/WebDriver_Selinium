@@ -1,73 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-20T14:39:27 IST" name="mysuite" finished-at="2023-05-20T14:40:07 IST" duration-ms="39957">
+  <suite started-at="2023-05-23T00:04:29 IST" name="Default suite" finished-at="2023-05-23T00:04:37 IST" duration-ms="8205">
     <groups>
     </groups>
-    <test started-at="2023-05-20T14:39:27 IST" name="chrome test" finished-at="2023-05-20T14:39:41 IST" duration-ms="13633">
-      <class name="parallel.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:parallel.ParamTest@6cf0e0ba]" started-at="2023-05-20T14:39:27 IST" name="setup" finished-at="2023-05-20T14:39:40 IST" duration-ms="13369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-05-23T00:04:29 IST" name="Default test" finished-at="2023-05-23T00:04:37 IST" duration-ms="8205">
+      <class name="Project_cognizant.Test_function">
+        <test-method is-config="true" signature="input()[pri:0, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:29 IST" name="input" finished-at="2023-05-23T00:04:35 IST" duration-ms="5726" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:parallel.ParamTest@6cf0e0ba]" started-at="2023-05-20T14:39:40 IST" name="testLogo" finished-at="2023-05-20T14:39:40 IST" duration-ms="43" status="PASS">
+        </test-method> <!-- input -->
+        <test-method signature="open_page()[pri:0, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:35 IST" name="open_page" finished-at="2023-05-23T00:04:36 IST" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testHomePageTitle()[pri:2, instance:parallel.ParamTest@6cf0e0ba]" started-at="2023-05-20T14:39:40 IST" name="testHomePageTitle" finished-at="2023-05-20T14:39:40 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- open_page -->
+        <test-method signature="car_type()[pri:2, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:36 IST" name="car_type" finished-at="2023-05-23T00:04:36 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:parallel.ParamTest@6cf0e0ba]" started-at="2023-05-20T14:39:40 IST" name="closeApp" finished-at="2023-05-20T14:39:41 IST" duration-ms="187" status="PASS">
+        </test-method> <!-- car_type -->
+        <test-method signature="colour()[pri:3, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:36 IST" name="colour" finished-at="2023-05-23T00:04:36 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- parallel.ParamTest -->
-    </test> <!-- chrome test -->
-    <test started-at="2023-05-20T14:39:27 IST" name="edge test" finished-at="2023-05-20T14:40:07 IST" duration-ms="39957">
-      <class name="parallel.ParamTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:parallel.ParamTest@9f116cc]" started-at="2023-05-20T14:39:27 IST" name="setup" finished-at="2023-05-20T14:40:07 IST" duration-ms="39678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- colour -->
+        <test-method signature="click()[pri:4, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:36 IST" name="click" finished-at="2023-05-23T00:04:36 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:parallel.ParamTest@9f116cc]" started-at="2023-05-20T14:40:07 IST" name="testLogo" finished-at="2023-05-20T14:40:07 IST" duration-ms="32" status="PASS">
+        </test-method> <!-- click -->
+        <test-method signature="sensor()[pri:5, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:36 IST" name="sensor" finished-at="2023-05-23T00:04:36 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testHomePageTitle()[pri:2, instance:parallel.ParamTest@9f116cc]" started-at="2023-05-20T14:40:07 IST" name="testHomePageTitle" finished-at="2023-05-20T14:40:07 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- sensor -->
+        <test-method signature="help()[pri:6, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:36 IST" name="help" finished-at="2023-05-23T00:04:37 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:parallel.ParamTest@9f116cc]" started-at="2023-05-20T14:40:07 IST" name="closeApp" finished-at="2023-05-20T14:40:07 IST" duration-ms="221" status="PASS">
+        </test-method> <!-- help -->
+        <test-method signature="chat()[pri:7, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:37 IST" name="chat" finished-at="2023-05-23T00:04:37 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- parallel.ParamTest -->
-    </test> <!-- edge test -->
-  </suite> <!-- mysuite -->
+        </test-method> <!-- chat -->
+        <test-method signature="visit()[pri:8, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:37 IST" name="visit" finished-at="2023-05-23T00:04:37 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visit -->
+        <test-method signature="validation()[pri:9, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:37 IST" name="validation" finished-at="2023-05-23T00:04:37 IST" depends-on-methods="Project_cognizant.Test_function.open_page" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Project_cognizant.Test_function@6379eb]" started-at="2023-05-23T00:04:37 IST" name="close" finished-at="2023-05-23T00:04:37 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Project_cognizant.Test_function -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
