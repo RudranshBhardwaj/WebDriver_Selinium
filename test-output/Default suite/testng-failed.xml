@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Project_cognizant.Test_function">
+      <class name="Mini_Project.project_test">
         <methods>
-          <include name="open_page"/>
+          <include name="colour"/>
+          <include name="car_type"/>
           <include name="input"/>
+          <include name="open_page"/>
           <include name="close"/>
-          <include name="validation"/>
         </methods>
-      </class> <!-- Project_cognizant.Test_function -->
+      </class> <!-- Mini_Project.project_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
