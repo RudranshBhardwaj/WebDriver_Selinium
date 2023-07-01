@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-27T22:13:37 IST" name="Default suite" finished-at="2023-05-27T22:13:45 IST" duration-ms="7715">
+  <suite started-at="2023-06-09T16:38:26 IST" name="Default suite" finished-at="2023-06-09T16:38:26 IST" duration-ms="87">
     <groups>
     </groups>
-    <test started-at="2023-05-27T22:13:37 IST" name="Default test" finished-at="2023-05-27T22:13:45 IST" duration-ms="7715">
-      <class name="Mini_Project.project_test">
-        <test-method is-config="true" signature="input()[pri:0, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:37 IST" name="input" finished-at="2023-05-27T22:13:41 IST" duration-ms="3800" status="PASS">
+    <test started-at="2023-06-09T16:38:26 IST" name="Default test" finished-at="2023-06-09T16:38:26 IST" duration-ms="87">
+      <class name="parallel.InvocationCountDemo">
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- input -->
-        <test-method signature="open_page()[pri:0, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:41 IST" name="open_page" finished-at="2023-05-27T22:13:42 IST" duration-ms="1039" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_page -->
-        <test-method signature="car_type()[pri:2, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:42 IST" name="car_type" finished-at="2023-05-27T22:13:43 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="834" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- car_type -->
-        <test-method signature="colour()[pri:3, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:43 IST" name="colour" finished-at="2023-05-27T22:13:43 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="208" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- colour -->
-        <test-method signature="click()[pri:4, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:43 IST" name="click" finished-at="2023-05-27T22:13:43 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="164" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click -->
-        <test-method signature="sensor()[pri:5, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:43 IST" name="sensor" finished-at="2023-05-27T22:13:43 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="200" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sensor -->
-        <test-method signature="help()[pri:6, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:43 IST" name="help" finished-at="2023-05-27T22:13:44 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="345" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- help -->
-        <test-method signature="chat()[pri:7, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:44 IST" name="chat" finished-at="2023-05-27T22:13:44 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="334" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chat -->
-        <test-method signature="visit()[pri:8, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:44 IST" name="visit" finished-at="2023-05-27T22:13:44 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="249" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- visit -->
-        <test-method signature="validation()[pri:9, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:44 IST" name="validation" finished-at="2023-05-27T22:13:44 IST" depends-on-methods="Mini_Project.project_test.open_page" duration-ms="226" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test()[pri:0, instance:parallel.InvocationCountDemo@795cd85e]" started-at="2023-06-09T16:38:26 IST" name="test" finished-at="2023-06-09T16:38:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validation -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Mini_Project.project_test@478190fc]" started-at="2023-05-27T22:13:44 IST" name="close" finished-at="2023-05-27T22:13:45 IST" duration-ms="267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- Mini_Project.project_test -->
+        </test-method> <!-- test -->
+      </class> <!-- parallel.InvocationCountDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
